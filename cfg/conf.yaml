@@ -1,0 +1,38 @@
+postgres:
+  host: localhost
+  port: 5432
+  mode: 'overwrite'
+  url: 'jdbc:postgresql://localhost:5432/postgres'
+  properties:
+    user: postgres
+    password: postgres
+    driver: org.postgresql.Driver
+billing:
+  path: './data/faturamento.parquet.gzip'
+  delimiter: ''
+  format: 'parquet'
+  header: 'true'
+  encoding: ''
+  table: 'tb_billing'
+freight:
+  path: './data/frete_original.csv'
+  delimiter: '|'
+  format: 'csv'
+  header: 'true'
+  encoding: 'UTF-32'
+  table: 'tb_freight'
+weight:
+  path: './data/peso_unitario.txt'
+  delimiter: ' '
+  format: 'csv'
+  header: ''
+  encoding: 'UTF-32'
+  table: 'tb_weight'
+sector:
+  path: './data/familiasetor.json'
+  delimiter: ''
+  format: ''
+  header: 'true'
+  encoding: 'UTF-8'
+  table: 'tb_sector'
+  

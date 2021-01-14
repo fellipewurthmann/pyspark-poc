@@ -1,0 +1,13 @@
+configs.pyc
+read.pyc
+session.pyc
+weight.pyc
+freight.pyc
+billing.pyc
+sector.pyc
+spark/write.pyc
+__pycache__
+.pytest_cache
+etls/__pycache__
+spark/__pycache__
+cfg/__pycache__
